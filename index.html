@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8e6eb">
+  <title>Letter for Neo ♡</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap');
+    :root{--rose:#ac526d;--ink:#693c4c;--muted:#a17c89;--paper:#fffaf4;--pink:#e8a5b7}
+    *{box-sizing:border-box}body{margin:0;min-height:100svh;color:var(--ink);font-family:'DM Sans',sans-serif;background:#f8e9ee;background-image:radial-gradient(ellipse at 15% 25%,#fff8f6 0,transparent 50%),radial-gradient(ellipse at 85% 75%,#f2cfdb 0,transparent 55%)}
+    body:before{content:'';position:fixed;inset:14px;border:1px solid #b66c8626;pointer-events:none;border-radius:3px}button,input{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible{outline:3px solid #b96a88;outline-offset:5px}[hidden]{display:none!important}
+    .topbar{position:absolute;top:36px;left:7%;right:7%;display:flex;justify-content:space-between;align-items:center;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}.brand{font-family:'Cormorant Garamond',Georgia,serif;font-size:22px;letter-spacing:0;font-style:italic;color:var(--rose)}
+    main{min-height:100svh;display:grid;place-items:center;padding:110px 24px 90px}.screen{text-align:center;width:min(100%,560px)}.eyebrow{font-size:10px;letter-spacing:.27em;text-transform:uppercase;color:var(--rose);margin:24px 0 16px}h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(42px,7vw,62px);line-height:1.05;margin:0 0 17px;letter-spacing:-.035em}h1 em{font-weight:400;color:var(--rose)}.subtitle{color:var(--muted);font-size:13px;line-height:1.9;margin:0 auto 30px}.lock-wrap{height:140px;display:grid;place-items:center;position:relative}.halo{position:absolute;width:144px;height:144px;border:1px solid #cf93a52d;border-radius:50%}.halo:before{content:'';position:absolute;inset:12px;border:1px dashed #cf93a533;border-radius:50%}
+    .lock{position:relative;width:70px;height:66px;margin-top:30px;border-radius:14px;background:linear-gradient(135deg,#f2b9c7,#d98ba2);box-shadow:0 12px 25px #a7547321,inset 0 1px 1px #fff9;display:grid;place-items:center}.shackle{position:absolute;width:42px;height:44px;border:6px solid #c47b94;border-bottom:0;top:-33px;border-radius:25px 25px 0 0;left:14px;transform-origin:5px 34px;transition:transform .6s}.keyhole{width:10px;height:13px;background:#fff5f1;clip-path:polygon(0 0,100% 0,100% 55%,70% 65%,85% 100%,15% 100%,30% 65%,0 55%);border-radius:50%}.unlocked .shackle{transform:translateY(-7px) rotate(-28deg)}
+    form{width:min(100%,300px);margin:auto}.input-label{display:block;text-align:left;margin:0 0 10px;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}input{width:100%;height:55px;border:1px solid #d8abb9;border-radius:8px;text-align:center;letter-spacing:.7em;padding-left:.7em;background:#fffaf780;color:var(--ink);font-size:20px}input::placeholder{font-size:15px;color:#caa1ae}.primary{border:0;border-radius:8px;background:var(--rose);color:#fff8f4;width:100%;padding:17px 24px;margin-top:13px;font-size:12px;letter-spacing:.04em;box-shadow:0 7px 15px #9e496516;transition:background .2s,transform .2s}.primary:hover{background:#91445e;transform:translateY(-2px)}.primary span{margin-left:17px}.hint{font-size:11px;color:#b38b99;margin-top:20px}.error{min-height:20px;font-size:12px;color:#a34364;margin:10px 0 0}.shake{animation:shake .35s}.leaving{animation:fadeOut .65s forwards}.entering{animation:fadeIn .7s both}
+    .ornament{position:fixed;pointer-events:none;color:#bd7b953d;font-family:Georgia,serif}.o1{top:24%;left:15%;font-size:24px;transform:rotate(-18deg)}.o2{top:34%;right:16%;font-size:15px}.o3{bottom:23%;left:23%;font-size:14px}.o4{bottom:29%;right:24%;font-size:26px;transform:rotate(15deg)}.footer{position:fixed;bottom:30px;left:0;right:0;text-align:center;font-size:9px;letter-spacing:.2em;color:#b48c9b;text-transform:uppercase}.footer span{color:#b96786;margin:0 7px}
+    .envelope-stage{width:300px;height:250px;margin:55px auto 15px;position:relative;perspective:1000px}.envelope{position:absolute;bottom:0;width:300px;height:190px;background:#d58da5;border-radius:6px;box-shadow:0 18px 45px #9b567e26}.envelope-back{position:absolute;inset:0;background:#d591a7;border-radius:6px}.mini-letter{position:absolute;width:260px;height:160px;background:var(--paper);left:20px;bottom:12px;border-radius:4px;padding:27px;color:var(--rose);font-family:'Cormorant Garamond',Georgia,serif;font-size:21px;transition:transform 1s .65s,opacity .4s 1.5s}.mini-letter:after{content:'♡';display:block;margin-top:15px}.envelope-front{position:absolute;inset:0;background:linear-gradient(150deg,#f2c0ce,#e8a9bd);clip-path:polygon(0 0,50% 56%,100% 0,100% 100%,0 100%);border-radius:0 0 6px 6px}.flap{position:absolute;inset:0;background:#edb4c6;clip-path:polygon(0 0,100% 0,50% 58%);transform-origin:top;transition:transform .7s,z-index 0s .35s;z-index:3}.seal{position:absolute;top:87px;left:132px;width:36px;height:36px;border-radius:50%;background:#b7607d;box-shadow:0 2px 5px #8e3c5c20;color:#fff1f4;display:grid;place-items:center;font-size:20px;z-index:4;transition:opacity .25s}.opening .flap{transform:rotateX(180deg);z-index:0}.opening .mini-letter{transform:translateY(-125px);opacity:0}.opening .seal{opacity:0}
+    .letter-screen{width:min(100%,660px);padding-top:10px}.letter{background:var(--paper);border:1px solid #d9b2b55e;padding:clamp(30px,6vw,64px);position:relative;box-shadow:0 20px 70px #a7637b12;text-align:left;transform:rotate(-.7deg)}.letter:before{content:'';position:absolute;inset:10px;border:1px solid #dcb8b64d;pointer-events:none}.letter-date{font-size:9px;text-transform:uppercase;letter-spacing:.23em;color:var(--muted);display:flex;justify-content:space-between;margin-bottom:36px}.letter h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(28px,5vw,41px);font-weight:600;line-height:1.2;margin:0 0 30px;color:var(--rose)}.letter-body{font-family:'Cormorant Garamond',Georgia,serif;font-size:22px;line-height:1.8;white-space:pre-line;min-height:130px;overflow-wrap:anywhere}.signature{margin-top:35px;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:25px;line-height:1.55}.signature span{font-size:21px}.letter-heart{text-align:center;color:#c18295;margin-top:30px;font-size:22px}.text-button{background:none;border:0;color:var(--rose);font-size:11px;padding:15px;margin-top:16px}.text-button:hover{text-decoration:underline}
+    @keyframes fadeOut{to{opacity:0;transform:translateY(-12px)}}@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}@keyframes shake{25%,75%{transform:translateX(-5px)}50%{transform:translateX(5px)}}
+    @media(max-width:500px){.topbar{top:30px;left:9%;right:9%}.topbar>span:last-child{font-size:8px}.o1{left:7%}.o2{right:8%}.footer{bottom:23px}.letter{transform:none}.letter-screen{padding-top:0}.envelope-stage{transform:scale(.88);margin-top:25px}main{padding-top:105px}.letter-body{font-size:20px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;transition-delay:0s!important}}
+  </style>
+</head>
+<body>
+  <header class="topbar"><span class="brand">with love,</span><span>A little something, just for you</span></header>
+  <span aria-hidden="true" class="ornament o1">♡</span><span aria-hidden="true" class="ornament o2">✧</span><span aria-hidden="true" class="ornament o3">✧</span><span aria-hidden="true" class="ornament o4">♡</span>
+  <main>
+    <section class="screen" id="lock-screen" aria-labelledby="lock-title">
+      <div class="lock-wrap" aria-hidden="true"><div class="halo"></div><div class="lock"><div class="shackle"></div><div class="keyhole"></div></div></div>
+      <p class="eyebrow">Sealed with a little love</p>
+      <h1 id="lock-title">Some things are<br><em>only for you.</em></h1>
+      <p class="subtitle">A little secret. A little surprise.<br>Enter our special code to see what’s inside.</p>
+      <form id="unlock-form"><label for="password" class="input-label">Your secret code</label><input id="password" type="password" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" placeholder="••••" autocomplete="off" required aria-describedby="error"><button class="primary" type="submit">Unlock my letter <span aria-hidden="true">♡</span></button><p class="error" id="error" role="status" aria-live="polite"></p></form>
+      <p class="hint">Four little numbers, one special meaning.</p>
+    </section>
+    <section class="screen" id="envelope-screen" hidden aria-labelledby="envelope-title"><p class="eyebrow">A special delivery</p><h1 id="envelope-title" tabindex="-1">You have <em>my heart.</em></h1><p class="subtitle">And a letter waiting to be opened.</p><div class="envelope-stage" aria-hidden="true"><div class="envelope"><div class="envelope-back"></div><div class="mini-letter">Just for you.</div><div class="envelope-front"></div><div class="flap"></div><div class="seal">♡</div></div></div><p class="hint" role="status">Opening your little surprise…</p></section>
+    <section class="screen letter-screen" id="letter-screen" hidden aria-labelledby="letter-title"><article class="letter"><div class="letter-date"><span>A birthday letter</span><span>Just for you ♡</span></div><h2 id="letter-title" tabindex="-1"></h2><div id="letter-body" class="letter-body"></div><footer class="signature">i love you always<br><span>-liam lei</span></footer><div class="letter-heart" aria-hidden="true">♡</div></article><button type="button" class="text-button" id="replay">↻ &nbsp; Open the letter again</button><button type="button" class="text-button" id="relock">Lock with love ♡</button></section>
+  </main>
+  <footer class="footer">Made <span>♡</span> with <span>♡</span> love </footer>
+  <script>
+    // EDIT YOUR LETTER HERE whenever you are ready. Use \n for a new line.
+    const LETTER = {
+      name: "NEO",
+      message: "Hi, baby! Happy birthday!\n\nI'm so thankful for your life because it brought you into mine and gave me the chance to court you. Keep being the blessing you are, not only to me but to everyone around us. I like everything about you, and I pray that our bond continues to grow stronger as we walk this path together.\n\nAlways remember that I'm here for you. I'll always be just one call away, baby. I'm not only your suitor—I'm your best friend, too, and you can share anything with me. Opening up to me will never make you a burden. I'm always ready to listen to your stories and whatever is on your heart.\n\nI pray for blessings upon you and your family. I like you, Neo. Have a wonderful day!",
+    };
+    const PASSWORD = '1116'; // A playful UI lock; this is not secure authentication.
+    const $ = id => document.getElementById(id);
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let busy = false;
+    const pause = ms => new Promise(resolve => setTimeout(resolve, reducedMotion.matches ? 20 : ms));
+    $('letter-title').textContent = `HAPPY BIRTHDAY ${LETTER.name}`;
+    $('letter-body').textContent = LETTER.message;
+    async function openLetter() {
+      if (busy) return;
+      busy = true;
+      $('letter-screen').hidden = true;
+      $('envelope-screen').hidden = false;
+      $('envelope-screen').classList.add('entering');
+      $('envelope-title').focus({preventScroll:true});
+      await pause(850);
+      $('envelope-screen').classList.add('opening');
+      await pause(2200);
+      $('envelope-screen').hidden = true;
+      $('envelope-screen').classList.remove('opening','entering');
+      $('letter-screen').hidden = false;
+      $('letter-screen').classList.add('entering');
+      $('letter-title').focus({preventScroll:true});
+      busy = false;
+    }
+    $('unlock-form').addEventListener('submit', async event => {
+      event.preventDefault();
+      if (busy) return;
+      if ($('password').value !== PASSWORD) {
+        $('error').textContent = 'Not quite, love. Try our little secret again.';
+        $('password').setAttribute('aria-invalid','true');
+        $('lock-screen').classList.remove('shake');
+        void $('lock-screen').offsetWidth;
+        $('lock-screen').classList.add('shake');
+        $('password').select();
+        return;
+      }
+      busy = true;
+      $('error').textContent = '';
+      $('password').removeAttribute('aria-invalid');
+      document.querySelector('.primary').disabled = true;
+      $('lock-screen').classList.add('unlocked');
+      await pause(650);
+      $('lock-screen').classList.add('leaving');
+      await pause(650);
+      $('lock-screen').hidden = true;
+      busy = false;
+      await openLetter();
+    });
+    $('password').addEventListener('input',()=>{ $('error').textContent=''; $('password').removeAttribute('aria-invalid'); });
+    $('replay').addEventListener('click',openLetter);
+    $('relock').addEventListener('click',()=>{
+      if(busy) return;
+      $('letter-screen').hidden=true;
+      $('letter-screen').classList.remove('entering');
+      $('lock-screen').hidden=false;
+      $('lock-screen').classList.remove('unlocked','leaving','shake');
+      $('unlock-form').reset();
+      document.querySelector('.primary').disabled=false;
+      $('password').focus({preventScroll:true});
+    });
+  </script>
+</body>
+</html>
